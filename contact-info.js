@@ -15,7 +15,25 @@ function{
 		contacts.log('Saved!');
 
 	};
+var Search =() =>{
+	document.getElementById("result").innerHTML="";
 
+	var Search = document.querySelector('[name="Search"]').value;
+
+	for (i=0; i<contacts.length;i++){
+		contactInfo=contacts[i];
+
+
+		firstname=contacts.firstname;
+		phone=contacts.phone;
+
+		if(firstname.includes(Search))
+			console.log(firstname, "found!")
+
+		var p tag = document.createElement("p");
+		
+	}
+}
 
 	
 
