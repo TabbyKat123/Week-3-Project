@@ -1,15 +1,33 @@
-var input,filter, ul, li, a, i,  txtValue;
-input= document.getElementById('myInput');
-filter=input.value.toUpperCase();
-ul=document.getElementById("myUL");
-li=ul.getElementByTagName('li');
+function{
+	var contactInfo =function(firstname,lastname,Email,Telephone){
+		return new contactInfo.init(firstname,lastname,Email,Telephone);}
 
-for(i=0; i<li.length;i++){
-	a=li[i].getElementByTagName("a")[0];
-	txtValue=a.textContent a.innerText;
-	if (txtValue.toUpperCase().indexOf(filter))>-1{
-		li[i].style.display="";
-	}else{
-		li[i].style.display="none";
-	}
-}
+	var contacts=[];
+	var savecontactInfo=()=>{
+		var fname=document.querySelector('[name="firstname"]').value;
+		var lastname=document.querySelector('[name="lastname"]').value;
+		var Email=document.querySelector('[name="Email"]').value;
+
+		var newcontact= new contactInfo(firstname,lastname,Email,Telephone);
+
+		contacts.push(newcontact);
+
+		contacts.log('Saved!');
+
+	};
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
